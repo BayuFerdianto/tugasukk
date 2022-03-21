@@ -27,13 +27,13 @@
         </div>
     <div class="row">
     <div class="col-md-3">
-        <a href="tambahbarang.php" class="btn btn-success">Tambah data</a>
+        <a href="tambahpenjualan.php" class="btn btn-success">Tambah data</a>
     </div>
     <div class="col-md-3"></div>
  <div class="col-md-3"></div>
  <div class="col-md-3">
- <form action="sql/caribarang.php" method="post" class="d-flex align-items-center">
- <input type="text" class="form-control" name="nama" placeholder="Masukkan nama disini ... " 
+ <form action="sql/carijual.php" method="post" class="d-flex align-items-center">
+ <input type="text" class="form-control" name="nama" placeholder="Masukkan nama pelanggan ... " 
 style="width:70%; float:left">
  &nbsp; <input class="btn btn-success" type="submit" value="Cari">
  </form>
@@ -44,8 +44,8 @@ style="width:70%; float:left">
  <thead class="table-success">
     <tr>
         <th scope="col">#</th>
-        <th scope="col">Transaksi</th>
-        <th scope="col">Meja</th>
+        <th scope="col">No.Transaksi</th>
+        <th scope="col">No.Meja</th>
         <th scope="col">Tanggal</th>
         <th scope="col">Pelanggan</th>
         <th scope="col">Produk</th>
