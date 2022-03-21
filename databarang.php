@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
  <head>
- <title>TOKOKU - ADMINISTRATOR</title>
+ <title>DINGGOO - Database Management System</title>
  <!-- ------------------------- MEMASUKKAN STYLE ------------------------- -->
  <link rel="stylesheet" href="style/style.css">
  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>

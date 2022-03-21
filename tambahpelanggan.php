@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
  <head>
- <title>TOKOKU - ADMINISTRATOR</title>
+ <title>DINGGOO - Database Management System</title>
  <!-- ------------------------- MEMASUKKAN STYLE ------------------------- -->
  <!-- <link href="style/css/bootstrap.min.css" rel="stylesheet">
  <link href="style/css/metisMenu.min.css" rel="stylesheet">
