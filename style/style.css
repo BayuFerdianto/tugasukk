@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: small;
+}
+
+.sidebar-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 78px;
+  background-color: #11101d;
+  padding: 6px 14px;
+  transition: all 0.5s ease;
+}
+.sidebar-left.active {
+  width: 240px;
+}
+.sidebar-left.active .logo-content .logo {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.sidebar-left .logo-content .logo {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logo-content .logo i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.logo .logo_name {
+  font-size: 20px;
+  font-weight: 400;
+}
+/* ------ */
+.sidebar-left #btn {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(-50%);
+}
+.sidebar-left.active #btn {
+  left: 90%;
+}
+/* ------------- */
+
+.sidebar-left ul {
+  margin-top: 20px;
+}
+.sidebar-left ul.nav-list {
+  padding-left: 0;
+}
+
+.sidebar-left ul li {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 50px;
+}
+
+.sidebar-left ul li input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  outline: none;
+  background-color: #1d1b31;
+  border: none;
+  padding-left: 50px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.sidebar-left ul li i.bx-search {
+  position: absolute;
+  z-index: 100;
+  color: #fff;
+  font-size: 22px;
+  transition: all 0.4s ease;
+}
+.sidebar-left ul li i.bx-search:hover {
+  background-color: #fff;
+  color: #1d1b31;
+}
+/* ---------function------------ */
+.sidebar-left li .tooltip {
+  position: absolute;
+  left: 122px;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  line-height: 35px;
+  text-align: center;
+  height: 35px;
+  width: 122px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5s);
+  transition: 0s;
+  opacity: 0;
+  pointer-events: none;
+  display: block;
+}
+.sidebar-left.active li .tooltip {
+  display: none;
+}
+.sidebar-left.active .links_name {
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar-left .links_name {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+/* ------tutup funtion------ */
+
+.sidebar-left li:hover .tooltip {
+  transition: all 0.5s ease;
+  top: 50%;
+  opacity: 1;
+}
+
+.sidebar-left li a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+.sidebar-left ul li a:hover {
+  background-color: #fff;
+  color: #11101d;
+}
+.sidebar-left ul li i {
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.sidebar-left .profile-content {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* ---------function----------- */
+.sidebar-left .profile-content .profile {
+  position: relative;
+  padding: 10px 6px;
+  height: 60px;
+  background: none;
+  transition: all 0.5s ease;
+}
+.sidebar-left.active .sidebar-left .profile-content .profil {
+  background: #1d1b31;
+}
+
+.profile-content .profile .profile-details {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  background-color: #1d1b31;
+  border-radius: 12px;
+}
+.sidebar-left.active .profile-content .profile .profile-details {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.profile .profile-details i {
+  font-size: 45px;
+  border-radius: 12px;
+}
+.profile .profile-details .job {
+  margin: 10px;
+}
+.profile .profile-details .name {
+  font-size: 15px;
+  font-weight: 400;
+}
+.profile .profile-details .job .name-job {
+  font-size: 12px;
+}
+
+.profile i.bx-log-out {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  min-width: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.4s ease;
+  background-color: #1d1b31;
+}
+
+.sidebar-left.active .profile i.bx-log-out {
+  left: 88%;
+  text-align: none;
+  background-color: none;
+}
+
+.hero {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 78px);
+  left: 78px;
+  transition: all 0.4s ease;
+}
+
+.hero .txt {
+  font-family: inherit;
+  font-size: 30px;
+  color: #11101d;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.sidebar-left.active ~ .hero {
+  width: calc(100% - 240px);
+  left: 240px;
+}
